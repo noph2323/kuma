@@ -23,8 +23,13 @@ export default function Index(){
         </Head>
         <div>
             Showing products From {from} To {to-1}
-            {/* <Image src="/KUMA-3.png"  layout="responsive" width={100} height={100} alt="logo"/>            
-            <Image src="/KUMA-2.png"  layout="responsive" width={100} height={100} alt="logo"/> */}
+            <br/>
+            <div>
+            {/* <Image src="/KUMA-3.png"  layout="responsive" width={100} height={100} alt="logo"/> */}
+            </div>
+            <div>
+            <Image src={`/KUMA-${from/50}.png`}  layout="responsive" width={100} height={100} alt="logo"/>
+            </div>
             <br/>
             <Link href={`/products/${to}`} >ถัดไป</Link>
             <br/>
